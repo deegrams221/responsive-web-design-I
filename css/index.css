@@ -65,17 +65,18 @@ h1, h2, h3, h4, h5 {
 }
 
 /*desktop.jpg CSS code starts here*/
+/*desktop.jpg CSS code starts here*/
 .container{
-	width: 1000px;
+	width: 80%;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 }
-
 /*navigation */
 nav{
 	display: flex;
-	justify-content: baseline;
+    justify-content: baseline;
+    
 }
 
 nav a{
@@ -85,11 +86,14 @@ nav a{
 	text-decoration: none;
 }
 
+nav hr{
+    display: none;
+}
+
 .logo{
 	display: flex;
 	margin-top: 10px;
 }
-
 /*header */
 .header div h1{
 	font-size: 60px;
@@ -97,6 +101,7 @@ nav a{
 	margin: 80px 30px 0;
 	display: flex;
 	/* background-color: aqua; */
+	
 }
 
 .header img{
@@ -135,7 +140,7 @@ button{
 	margin-left: 3%;
 	flex-direction: column;
 }
-
+/*sections */
 section{
 	margin: 0;
 	padding: 10px 0;
@@ -210,15 +215,17 @@ footer{
 	text-align: center;
 }
 
+
 /* Responsive Styles */
 /* Tablet-view */
 @media screen and (max-width: 800px){
-    #container{
+    .container{
         width: 90%;
     }
 
     /* navigation */
     nav{
+        width: 100%;
         justify-content:center;
         align-items:center;
         /* background-color: aquamarine; */
@@ -236,7 +243,15 @@ footer{
         align-items:center;
     }
 
-    .col2{
+    .col{
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        width: 100%;
+        /* background-color: aqua; */
+    }
+
+    .col:nth-child(2){
         display: none;
     }
 
@@ -250,7 +265,7 @@ footer{
 
 /* Mobile-view */
 @media screen and (max-width: 500px){
-    #container{
+    .container{
         display: flex;
         width: 90%;
     }
@@ -261,11 +276,16 @@ footer{
         flex-direction: column-reverse;
         justify-content:center;
         align-items:center;
+        width: 100%;
     }
 
     nav a{
-        align-content: center;
-        align-items: center;
+        padding-bottom: 10px ;
+    }
+    nav hr{
+        display: flex;
+        min-width: 100%;
+
     }
 
     /* header */
@@ -276,7 +296,14 @@ footer{
         /* background-color: aqua; */
     }
 
-    .col2{
+    .col{
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        width: 100%;
+    }
+
+    .col:nth-child(2){
         display: none;
     }
 
