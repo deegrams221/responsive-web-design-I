@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5 {
 }
 
 /*desktop.jpg CSS code starts here*/
-/*desktop.jpg CSS code starts here*/
+
 .container{
 	width: 80%;
 	margin: 0 auto;
@@ -79,11 +79,18 @@ nav{
     
 }
 
+nav div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
 nav a{
 	width: 20%;
 	margin-top: 20px;
 	color: grey;
-	text-decoration: none;
+    text-decoration: none;
 }
 
 nav hr{
@@ -226,15 +233,19 @@ footer{
     /* navigation */
     nav{
         width: 100%;
+        flex-direction: column-reverse;
         justify-content:center;
         align-items:center;
         /* background-color: aquamarine; */
     }
 
+   
+
     .logo{
         display: flex;
-        flex-flow: column nowrap;
-        flex-direction: column-reverse;
+        margin: 5%;
+        
+        
     }
 
     /* header */
@@ -282,6 +293,7 @@ footer{
     nav a{
         padding-bottom: 10px ;
     }
+
     nav hr{
         display: flex;
         min-width: 100%;
